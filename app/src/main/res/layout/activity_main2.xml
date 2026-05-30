@@ -24,11 +24,24 @@
 
 
         <ImageView
+            android:id="@+id/imgAvatar"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:src="@android:drawable/ic_menu_gallery"
             android:contentDescription="Avatar"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="centerCrop"
+            android:background="@android:drawable/picture_frame"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhấn để chọn ảnh"
+            android:textSize="12sp"
+            android:textColor="#03A9F4"
+            android:layout_marginBottom="16dp"/>
 
 
         <LinearLayout
@@ -54,7 +67,7 @@
                 android:backgroundTint="#00BFA5"/>
         </LinearLayout>
 
-        <!-- Dòng Điện thoại -->
+        // Dòng Điện thoại
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -109,7 +122,7 @@
                 android:layout_marginStart="8dp"/>
         </LinearLayout>
 
-        <!-- Thanh tiêu đề Bằng cấp -->
+        //Thanh tiêu đề Bằng cấp
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -120,8 +133,8 @@
             android:gravity="center"
             android:padding="6dp"
             android:layout_marginBottom="12dp"/>
-
-        <!-- Nhóm RadioButton Bằng cấp -->
+    
+        // Nhóm RadioButton Bằng cấp 
         <RadioGroup
             android:id="@+id/rgBangCap"
             android:layout_width="match_parent"
@@ -151,7 +164,7 @@
                 android:text="Cao học"/>
         </RadioGroup>
 
-        <!-- Thanh tiêu đề Sở thích -->
+        //Thanh tiêu đề Sở thích
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -163,43 +176,43 @@
             android:padding="6dp"
             android:layout_marginBottom="12dp"/>
 
-        <!-- Các Checkbox Sở thích -->
+        // Các Checkbox Sở thích
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center_horizontal"
             android:layout_marginBottom="24dp">
 
             <CheckBox
                 android:id="@+id/cbBongDa"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Bóng đá"
-                android:layout_marginEnd="4dp"/>
+                android:layout_weight="1"
+                android:text="Bóng đá"/>
 
             <CheckBox
                 android:id="@+id/cbNgheNhac"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Nghe nhạc"
-                android:layout_marginEnd="4dp"/>
+                android:layout_weight="1"
+                android:text="Nghe nhạc"/>
 
             <CheckBox
                 android:id="@+id/cbXemPhim"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Xem phim"
-                android:layout_marginEnd="4dp"/>
+                android:layout_weight="1"
+                android:text="Xem phim"/>
 
             <CheckBox
                 android:id="@+id/cbDuLich"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="Du lịch"/>
         </LinearLayout>
 
-        <!-- Hai nút bấm -->
+        // Hai nút bấm
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -225,7 +238,7 @@
                 android:textColor="#FFFFFF" />
         </LinearLayout>
 
-        <!-- Vùng hiển thị kết quả -->
+        // Vùng hiển thị kết quả
         <TextView
             android:id="@+id/tvKetQua"
             android:layout_width="match_parent"
