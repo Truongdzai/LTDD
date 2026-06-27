@@ -1,3 +1,4 @@
+//Test git
 package com.example.hitcapp;
 
 import android.os.Bundle;
